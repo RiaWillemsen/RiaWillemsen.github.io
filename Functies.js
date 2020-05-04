@@ -1,8 +1,10 @@
+ /* Deze vergtoot de afbeeldingen (kunstwerken) */
  function onClick(element) {
     document.getElementById("img01").src = element.src;
     document.getElementById("modal01").style.display="block";
   }
 
+/* Deze controleert de kousen (Test uw kennis) */
   function CheckKousen() {
     if (document.getElementById("radio1").checked == false) {
       document.getElementById("KousenText").value = "   Probeer opnieuw";
@@ -13,6 +15,7 @@
     }
   }
 
+/* Deze controleert de handen (Test uw kennis) */
   function CheckHanden() {
     if (document.getElementById("radioHand3").checked == false) {
       document.getElementById("HandenText").value = "   Probeer opnieuw";
@@ -21,9 +24,17 @@
     }  else{
       document.getElementById("HandenText").value = "   Juist";
       document.getElementById("HandenText").style = "color: green;border: white; font-weight: bold;"
-      document.getElementById("HandenTextInfo").value = " Dit is het hand van Sauronman (Lord of the rings trilogie)";
+      document.getElementById("HandenTextInfo").value = " Dit is het hand van Sauron (Lord of the rings trilogie)";
       document.getElementById("HandenTextInfo").style = "border: white; font-weight: bold;"
     }
   }
 
-  
+/* Deze toont een waarschuwing (Contact) */
+  function Alertbox(){
+    alert("Deze site is momenteel uitsluitend 'front-end', dit bericht wordt niet verstuurd")
+  }
+
+/* Deze toont de tijd (footer) */
+  function GetTime(){
+    document.getElementById("DateTime").innerHTML = Date();
+  }

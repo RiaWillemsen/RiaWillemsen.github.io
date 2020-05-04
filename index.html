@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Site voor moeke</title>
+    <title>Kunstwerken van Ria Willemsen</title>
+
+     <!-- Bootstrap -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -9,92 +11,77 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   
-    <link rel="stylesheet" href="Formatter.css"> <!-- // Nodig voor de sticky -->
+    <!-- eigen css en js -->
+    <link rel="stylesheet" href="Formatter.css">
     <script src="Functies.js"></script>
-  
-    <!-- Dit is voor 'modal' (=het vergrote foto bij klikken)   Hoe doe ik dit zonder dit?-->
+
+    <!-- css van w3schools -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
-  
   </head>
-<body>
 
-  <div class="jumbotron text-center">
-    <h1>Kunstwerken van Ria Willemsen</h1>
-</div>
+  <body onload=GetTime()>
 
+    <div class="jumbotron text-center">
+      <h1>Kunstwerken van Ria Willemsen</h1>
+    </div>
 
+    <div class="container">
+      <div class="row">
 
-<div class="container" style="margin-top:30px">
-  <div class="row">
+        <div class="col-sm-2">
+          <div> 
+            <img src="Extra foto's\FotoRia.png" class="img-thumbnail" alt="File not found">
+          </div>
+        </div>
 
-    <div class="col-sm-2">
-        <div> <img src="Extra foto's\FotoRia.png" class="img-thumbnail" alt="File not found">
-      </div>
-      </div>
-
-    <div class="col-sm-9">
-
-        <h2>Passie voor huid en handen</h2>
-        <p>Als kind heb ik steeds veel en graag getekend. Mijn ouders dachten dan ook dat ik in die richting wel verder zou studeren. Maar ik ging een andere weg uit. Ik werd arts en huidspecialiste. Ik nam me voor om, eens met pensioen, uiteindelijk toch naar de academie te gaan.  
-          Maar ik kon zolang niet wachten...        
+        <div class="col-sm-9">
+          <h2>Passie voor huid en handen</h2>
+          <p>Als kind heb ik steeds veel en graag getekend. Mijn ouders dachten dan ook dat ik in die richting wel verder zou studeren. Maar ik ging een andere weg uit. Ik werd arts en huidspecialiste. Ik nam me voor om, eens met pensioen, uiteindelijk toch naar de academie te gaan.  
+              Maar ik kon zolang niet wachten...        
           </p>
-        <p>In 2003 heb ik me ingeschreven aan de academie van Anderlecht. 
-          Daar ben ik huidstructuren beginnen te schilderen. Huid vormt de grens tussen onszelf en de omgeving. Ze beschermt ons maar schermt ons ook af. Het is die grens die me boeit. 
+          <p>In 2003 heb ik me ingeschreven aan de academie van Anderlecht. 
+              Daar ben ik huidstructuren beginnen te schilderen. Huid vormt de grens tussen onszelf en de omgeving. Ze beschermt ons maar schermt ons ook af. Het is die grens die me boeit. 
           </p>
-        <p>In mijn later werk vind je talrijke handen. Handen hebben me ook altijd gefascineerd. Ik kijk er vaak naar. Ze geven zoveel informatie...De zachte witte handen van een boekhouder of de verweerde handen van een landbouwer. De roze grijpgrage handjes van een baby of de met vlekken bedekte handen van grootmoeder. Eerst heb ik ze tweedimensionaal weergegeven, nadien kregen ze steeds meer volume en werden ze ruwer. 
-          Net als de tijd ook mijn eigen handen ruwer heeft gemaakt.
+          <p>In mijn later werk vind je talrijke handen. Handen hebben me ook altijd gefascineerd. Ik kijk er vaak naar. Ze geven zoveel informatie... De zachte witte handen van een boekhouder of de verweerde handen van een landbouwer. De roze grijpgrage handjes van een baby of de met vlekken bedekte handen van grootmoeder. Eerst heb ik ze tweedimensionaal weergegeven, nadien kregen ze steeds meer volume en werden ze ruwer. 
+              Net als de tijd ook mijn eigen handen ruwer heeft gemaakt.
           </p>
-        <p>Handen kunnen liefdevol aanraken maar ook afschermen en verdedigen.  Deze speelse afwisseling tussen kracht en tederheid is wat ik in mijn werk probeer uit te drukken.        
+          <p>Handen kunnen liefdevol aanraken maar ook afschermen en verdedigen.  Deze speelse afwisseling tussen kracht en tederheid is wat ik in mijn werk probeer uit te drukken.        
           </p>
-        <p>In vele werken zijn gemaakt medisch afval papier.  Dat is gewoon het papier waar mensen op gaan liggen wanneer ik naar hun huid kijk. Wanneer het gemengd wordt met wat klei en behangerslijm; onstaat er een stevigheid.  Maar dit materiaal drukt ook vergankelijk heid uit. 
-        </p>
-        <p>Daaruit kwam de reeks “ vergane vogels “
+          <p>In vele werken zijn gemaakt medisch afval papier.  Dat is gewoon het papier waar mensen op gaan liggen wanneer ik naar hun huid kijk. Wanneer het gemengd wordt met wat klei en behangerslijm; onstaat er een stevigheid.  Maar dit materiaal drukt ook vergankelijk heid uit. 
           </p>
+          <p>Daaruit kwam de reeks “vergane vogels“.
+          </p>
+        </div>
         
-    </div>
-    
+        <div class="col-sm-1">
+          <div class="sticky">
+            <h3>Navigatie</h3>
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="HTML/kustwerken.html">Kunstwerken</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="HTML/Contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="HTML/Curriculum.html">Curriculum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="HTML/Spellen.html">Test uw kennis</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-   <div class="col-sm-1">
-
-     <div class="sticky">
-
-    <h3>Navigatie</h3>
-
-    <ul class="nav nav-pills flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="HTML/kustwerken.html">Kunstwerken</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="HTML/Contact.html">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="HTML/Curriculum.html">Curriculum</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="HTML/Spellen.html">Test uw kennis</a>
-      </li>
-    </ul>
-
-
-
+      </div>
     </div>
 
-   </div>
+    <div class="jumbotron text-center" style="background-color:lightgrey;margin-top: 10px"  >
+      <p id="DateTime"></p>
+    </div>
 
-  </div>
-</div>
-
-
-
-<div class="jumbotron text-center" style="background-color:lightgrey;"  >
-  <p>Made by Arno while studying Front-end</p>
-</div>
-
-
-
-</body>
+  </body>
 </html>
