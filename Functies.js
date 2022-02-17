@@ -1,8 +1,26 @@
  /* Deze vergtoot de afbeeldingen (kunstwerken) */
  function onClick(element) {
+
+
+    // document.getElementById("img01").src = "../foto's\\reeks2 Beeldhouwen vogels\\3 bis Ancient kingdom .jpg";
+    // document.getElementById("modal01").style.display="block";
+
     document.getElementById("img01").src = element.src;
     document.getElementById("modal01").style.display="block";
   }
+
+  // function onClickWithPicture(source) {
+
+
+  //   // document.getElementById("img01").src = "../foto's\\reeks2 Beeldhouwen vogels\\3 bis Ancient kingdom .jpg";
+  //   // document.getElementById("modal01").style.display="block";
+  //   alert(source)
+
+  //   document.getElementById("img01").src = source;
+  //   alert(source)
+  //   document.getElementById("modal01").style.display="block";
+  // }
+
 
 /* Deze controleert de kousen (Test uw kennis) */
   function CheckKousen() {
@@ -31,7 +49,7 @@
 
 /* Deze toont een waarschuwing (Contact) */
   function Alertbox(){
-    alert("Deze site is momenteel uitsluitend 'front-end', dit bericht wordt niet verstuurd")
+    alert("Dit deel is nog in constuctie, geen mail zal worden verzonden")
   }
 
 /* Deze toont de tijd (footer) */
